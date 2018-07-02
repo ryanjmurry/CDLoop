@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Index</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    </head>
+    <body>
+        <div class="container">
+            @foreach (var cd in Model)
+            {
+                <h3>@cd.GetAlbum()</h3>
+                <h4>By: @cd.GetArtist()</h4>
+                <h5>Price: $@cd.GetPrice()</h5>
+            }
+        </div>
+    </body>
+</html>
